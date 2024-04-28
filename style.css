@@ -1,3 +1,9 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +21,6 @@ html {
 @font-face {
     font-family: Lobster;
     src: url(./font/Lobster-Regular.ttf);
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 body {
@@ -62,7 +62,7 @@ img + p {
 .credit {
     position: absolute;
     top: 97%;
-    left: 10%;
+    left: 9%;
 }
 
 .credit > span {
@@ -76,18 +76,18 @@ img + p {
     font-weight: 600;
 }
 
-.header {
+.container-header {
     flex: 1;
     padding: 3rem 5rem;
     font-size: 1.8rem;
     background-color: #f9fafb;
 }
 
-.header > p:first-child {
+.container-header > p:first-child {
     max-width: 60ch;
 }
 
-.header > p:nth-child(2){
+.container-header > p:nth-child(2){
     margin-bottom: 1.5rem;
     color: var(--coffee-color);
 }
@@ -141,10 +141,6 @@ h2 {
 
 input[type="number"] {
     -moz-appearance: textfield;
-}
-
-input[type="number"]:invalid {
-    border: 1px solid red;
 }
 
 .container-button{
