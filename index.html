@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -27,7 +28,7 @@
           <p>Sign up <em>now</em> to get started.</p>
           <p>You <em>know</em> you want to.</p>
         </div>
-        <form class="sign-up-form">
+        <form class="sign-up-form" method="post">
           <div class="form-inputs">
             <h2>Let's do this!</h2>
             <div class="container-inputs names">
@@ -47,7 +48,7 @@
               </div>
               <div>
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" />
+                <input type="number" name="phone" id="phone" />
               </div>
             </div>
             <div class="container-inputs email-phone">
@@ -60,6 +61,7 @@
                 <input type="password" name="cpassword" id="cpassword" />
               </div>
             </div>
+            <p class="incorrect">* Password does not match!</p>
           </div>
           <div class="container-button">
             <button class="btn-create">Create Account</button>

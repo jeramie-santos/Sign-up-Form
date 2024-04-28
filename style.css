@@ -17,6 +17,12 @@ html {
     src: url(./font/Lobster-Regular.ttf);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -113,6 +119,7 @@ h2 {
     display: block;
     font-size: .9rem;
     text-transform: uppercase;
+    color: var(--coffee-color);
 }
 
 .container-inputs input {
@@ -120,6 +127,24 @@ h2 {
     padding: .5rem;
     border: 1px solid lightgray;
     border-radius: 3px;
+    outline: none;
+}
+
+.container-inputs input:focus {
+    border: 1px solid blue;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .3);
+}
+
+.container-inputs input:invalid {
+    border: 1px solid red;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:invalid {
+    border: 1px solid red;
 }
 
 .container-button{
@@ -144,6 +169,16 @@ h2 {
 .btn-create + p > a {
     color: var(--coffee-color);
     text-decoration: none;
+}
+
+.incorrect {
+    color: red;
+    font-size: .6rem;
+    display: none;
+}
+
+.invalid {
+    border: 1px solid red !important;
 }
 
 
