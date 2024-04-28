@@ -7,4 +7,4 @@ Making a sign up form based on the past lessons:
 - Advance HTML & CSS
 - Forms
 
-**TODO**. Box shadow
+**TODO**. CSS & JS Form Validation
