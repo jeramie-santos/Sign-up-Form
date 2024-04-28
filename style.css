@@ -8,6 +8,10 @@ html {
     line-height: 1.5;
 }
 
+:root {
+    --coffee-color: #d19b62;
+}
+
 @font-face {
     font-family: Lobster;
     src: url(./font/Lobster-Regular.ttf);
@@ -54,7 +58,10 @@ img + p {
     left: 10%;
 }
 
+.credit > span {
+    text-decoration: underline;
+}
+
 .sign-up-right {
     flex: 2;
-    background-color: aquamarine;
 }
