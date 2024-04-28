@@ -72,7 +72,7 @@ img + p {
 
 .header {
     flex: 1;
-    padding: 3rem 5rem 0;
+    padding: 3rem 5rem;
     font-size: 1.8rem;
     background-color: #f9fafb;
 }
@@ -88,7 +88,61 @@ img + p {
 
 .sign-up-form {
     flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs {
+    padding: 3rem 5rem;
+    flex: 1;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+.container-inputs {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 1rem;
+}
+
+.container-inputs  label {
+    display: block;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.container-inputs input {
+    width: 16rem;
+    padding: .5rem;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.container-button{
+    flex: 1;
+    background-color: #f9fafb;
     padding: 3rem 5rem;
 }
+
+.btn-create {
+    background-color: var(--coffee-color);
+    border: 1px solid var(--coffee-color);
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-create + p > a {
+    color: var(--coffee-color);
+    text-decoration: none;
+}
+
+
 
 
